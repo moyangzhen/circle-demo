@@ -12,7 +12,7 @@ jobs:
            - "3c:77:9f:ff:d9:64:35:0d:5c:6b:3d:68:d8:46:6b:6e"
       - checkout 
       - restore_cache:
-          keys: - dependencies_imooc
+          keys: dependencies_imooc
       - run:
           name: Install
           command: yarn install
