@@ -7,13 +7,13 @@ jobs:
       only:
         - master
     steps:
-      -add_ssh_keys:
+      - add_ssh_keys:
          fingerprints:
            - "3c:77:9f:ff:d9:64:35:0d:5c:6b:3d:68:d8:46:6b:6e"
       - checkout 
       - run:
-        name: Install
-        command: yarn install
+          name: Install
+          command: yarn install
       - run:
-        name: build
-        command: yarn build  
+          name: build
+          command: yarn build  
